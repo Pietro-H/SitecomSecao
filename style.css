@@ -1,1 +1,40 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(241, 160, 241);
+    color: rgb(255, 255, 255);
+}
 
+.cabecalho{
+    background-color: rgb(241, 160, 241;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.cabecalho-marca{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cabecalho-imagem{
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cabecalho-subtitulo{
+    font-size: 14px;
+    color: rgb(223, 28, 28);
+}
