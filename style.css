@@ -346,3 +346,20 @@ body.tema-escuro .descricao {
 body.tema-escuro .voltar {
     box-shadow: 0 3px 9px #00000073;
 }
+
+/* Rodapé */
+footer {
+min-height: 7em;
+color: var(--verde-profundo);
+background-color: var(--verde-claro);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+border-radius: 5px;
+}
+
+footer p {
+line-height: 1.5;
+}
