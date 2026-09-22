@@ -1,33 +1,20 @@
-// Theme Toggle Logic
-const themeBtn = document.getElementById('botao-tema');
-themeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  const isDark = document.body.classList.contains('dark-mode');
-  themeBtn.textContent = isDark ? '☀️ Tema' : '🌚 Tema';
-});
+// troca de tema
+        const botaoTema = document.querySelector("#botao-tema");
+        const temaSalvo = localStorage.getItem("tema");
 
-// FormSubmit AJAX Handler
-const form = document.getElementById('formulario-contato');
-const responseText = document.getElementById('resposta-formulario');
+        if (temaSalvo === "escuro") {
+            document.body.classList.add("tema-escuro");
+            botaoTema.textContent = "☀ Tema";
+        }
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  responseText.textContent = "Enviando mensagem...";
-  
-  try {
-    const response = await fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    });
+        botaoTema.addEventListener("click", function () {
+            document.body.classList.toggle("tema-escuro");
 
-    if (response.ok) {
-      responseText.textContent = "Mensagem enviada com sucesso!";
-      form.reset();
-    } else {
-      responseText.textContent = "Ocorreu um erro ao enviar. Tente novamente.";
-    }
-  } catch (error) {
-    responseText.textContent = "Erro de conexão. Verifique sua rede.";
-  }
-});
+            if (document.body.classList.contains("tema-escuro")) {
+                botaoTema.textContent = "☀ Tema";
+                localStorage.setItem("tema", "escuro");
+            } else {
+                botaoTema.textContent = "🌙 Tema";
+                localStorage.setItem("tema", "claro");
+            }
+        });
