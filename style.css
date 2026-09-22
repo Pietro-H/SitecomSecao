@@ -336,7 +336,7 @@ body.tema-escuro footer {
 
 body.tema-escuro .fale-conosco button:disabled {
     background-color: #696F64;
-    color: #FFFFFF;
+    color: #a2b6dd;
 }
 
 body.tema-escuro .descricao {
@@ -358,7 +358,7 @@ justify-content: center;
 align-items: center;
 width: 44px;
 height: 44px;
-color: var(--branco);
+color: var(#958fb873);
 background-color: var(--verde-folha);
 border-radius: 50%;
 text-decoration: none;
@@ -444,7 +444,7 @@ gap: 6px;
 
 .cabecalho a {
 font-size: 17px;
-background-color: #EBF1E0;
+background-color: #cae793;
 }
 
 .botao-tema {
