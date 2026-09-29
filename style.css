@@ -1,3 +1,11 @@
+/* Definição de Variáveis de Cor */
+:root {
+    --verde-folha: #52702F;
+    --verde-profundo: #2E431C;
+    --verde-claro: #EBF1E0;
+    --sombra-botao: rgba(46, 67, 28, 0.45);
+}
+
 /* Reset e Estilos Globais */
 * {
     margin: 0;
@@ -237,18 +245,6 @@ body {
     font-weight: bold;
 }
 
-/* Adaptabilidade Mobile */
-@media (max-width: 768px) {
-    .secao {
-        flex-direction: column;
-    }
-
-    .cabecalho {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 /* Tema Escuro */
 body.tema-escuro {
     background-color: #1C2218;
@@ -347,122 +343,124 @@ body.tema-escuro .voltar {
     box-shadow: 0 3px 9px #00000073;
 }
 
+/* Botão Voltar ao Topo */
 .voltar {
-position: fixed;
-right: 18px;
-bottom: 18px;
-z-index: 10;
-/* Ajuste: usamos flex para centralizar a seta dentro de um botão redondo. */
-display: flex;
-justify-content: center;
-align-items: center;
-width: 44px;
-height: 44px;
-color: var(#958fb873);
-background-color: var(--verde-folha);
-border-radius: 50%;
-text-decoration: none;
-font-weight: bold;
-font-size: 24px;
-line-height: 1;
-opacity: 0.85;
-box-shadow: 0 3px 9px var(--sombra-botao);
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: #FFFFFF;
+    background-color: var(--verde-folha);
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    opacity: 0.85;
+    box-shadow: 0 3px 9px var(--sombra-botao);
 }
+
 .voltar:hover {
-background-color: var(--verde-profundo);
-opacity: 1;
+    background-color: var(--verde-profundo);
+    opacity: 1;
 }
 
 /* Rodapé */
 footer {
-min-height: 7em;
-color: var(--verde-profundo);
-background-color: var(--verde-claro);
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 20px;
-border-radius: 5px;
+    min-height: 7em;
+    color: var(--verde-profundo);
+    background-color: var(--verde-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 footer p {
-line-height: 1.5;
+    line-height: 1.5;
 }
 
+/* Adaptabilidade Mobile */
 @media (max-width: 800px) {
-body {
-padding: 6px;
-font-size: 14px;
-}
+    body {
+        padding: 6px;
+        font-size: 14px;
+    }
 
-.secao {
-flex-direction: column;
-padding: 14px;
-}
+    .secao {
+        flex-direction: column;
+        padding: 14px;
+    }
 
-.texto,
-.imagem {
-padding: 6px;
-}
+    .texto,
+    .imagem {
+        padding: 6px;
+    }
 
-.texto {
-max-width: 100%;
-}
+    .texto {
+        max-width: 100%;
+    }
 
-.texto p {
-text-align: left;
-line-height: 1.7;
-}
+    .texto p {
+        text-align: left;
+        line-height: 1.7;
+    }
 
-.cabecalho {
-flex-direction: column;
-text-align: center;
-padding: 14px;
-}
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+        padding: 14px;
+    }
 
-.cabecalho-marca {
-flex-direction: column;
-width: min(520px, 100%);
-}
+    .cabecalho-marca {
+        flex-direction: column;
+        width: min(520px, 100%);
+    }
 
-.cabecalho-subtitulo {
-width: 100%;
-text-align: left;
-}
+    .cabecalho-subtitulo {
+        width: 100%;
+        text-align: center;
+    }
 
-.cabecalho-imagem {
-width: min(280px, 80vw);
-height: 150px;
-margin-bottom: 10px;
-}
+    .cabecalho-imagem {
+        width: min(280px, 80vw);
+        height: 150px;
+        margin-bottom: 10px;
+    }
 
-.cabecalho-lista {
-width: 100%;
-gap: 6px;
-}
+    .cabecalho-lista {
+        width: 100%;
+        gap: 6px;
+    }
 
-.cabecalho a {
-font-size: 17px;
-background-color: #cae793;
-}
+    .cabecalho a {
+        font-size: 17px;
+        background-color: #cae793;
+    }
 
-.botao-tema {
-width: 100%;
-max-width: 280px;
-font-size: 17px;
-}
+    .botao-tema {
+        width: 100%;
+        max-width: 280px;
+        font-size: 17px;
+    }
 
-footer .texto {
-max-width: 100%;
-text-align: center;
-}
+    footer .texto {
+        max-width: 100%;
+        text-align: center;
+    }
 
-footer .texto p {
-text-align: center;
-}
+    footer .texto p {
+        text-align: center;
+    }
 
-.imagem img {
-height: 220px;
-}
+    .imagem img {
+        height: 220px;
+    }
 }
