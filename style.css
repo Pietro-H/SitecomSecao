@@ -289,8 +289,7 @@ body.tema-escuro .voltar:hover {
 }
 
 body.tema-escuro .descricao h2,
-body.tema-escuro .fale-conosco h2,
-body.tema-escuro footer {
+body.tema-escuro .fale-conosco h2 {
     color: #E8EFDA;
 }
 
@@ -327,7 +326,8 @@ body.tema-escuro .fale-conosco .erro {
 }
 
 body.tema-escuro footer {
-    background-color: #304127;
+    background-color: #8B008B; /* Magenta escuro no tema noturno */
+    color: #FFFFFF;
 }
 
 body.tema-escuro .fale-conosco button:disabled {
@@ -373,8 +373,8 @@ body.tema-escuro .voltar {
 /* Rodapé */
 footer {
     min-height: 7em;
-    color: var(--verde-profundo);
-    background-color: var(--verde-claro);
+    color: #FFFFFF;
+    background-color: magenta;
     display: flex;
     justify-content: center;
     align-items: center;
